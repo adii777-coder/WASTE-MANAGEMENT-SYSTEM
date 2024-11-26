@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Nav */
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    gap: 10vw;
+    text-transform: uppercase;
+}
+
+.nav-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.icon{
+    background-color: #fa3030;
+    height: 6vh;
+    padding: 10px;
+    font-size: 1.5vh;
+}
+
+.nav-wrap{
+    box-shadow: 0px 0px 10px black;
+    background-color: #222222;
+    position: fixed;
+    width: 100%;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.about a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-cont a::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fa3030;
+    transition: all 0.2s;
+}
+
+.nav-cont a:hover::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fa3030;
+    transition: all 0.2s;
+}
+
+.line{
+    border-radius: 50px;
+    width: 1px;
+    height: 3vh;
+    background-color: white;
+}
+
+/* Hero */
+
+.hero-cont{
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: White;
+    padding-left: 20vw;
+    gap: 3vh;
+}
+
+.hero-wrap{
+    padding-top: 6vh;
+    background-image: url(200309_r35938web.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+h2{
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.hero-cont p{
+    width: 60%;
+}
+
+.hero-btn{
+    width: fit-content;
+    background-color: #fa3030;
+}
+
+.hero-btn h3{
+    padding: 20px;
+    padding-bottom: 15px;
+    text-transform:uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hero-btn h3::after{
+    margin-top: 5px;
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #222222;
+    transition: all 0.2s;
+}
+
+.hero-btn h3:hover::after{
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.hero{
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+}
+
+/* Section 1 */
+.sec1-wrap{
+    padding-top: 10vh;
+}
+
+.sec1-cont{
+    padding: 50px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sec1-types{
+    padding: 10px;
+}
+
+.sec1-imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.section1{
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30.3333%;
+}
+
+.s11 .sec1-img{
+    background-image: url(-1x-1.jpg);
+}
+.s12 .sec1-img{
+    background-image: url(-1x-12.jpg);
+}
+.s13 .sec1-img{
+    background-image: url(food-waste.0.jpg);
+}
+.s14 .sec1-img{
+    background-image: url(https://c2.staticflickr.com/8/7380/8722744533_5fb19e125e_b.jpg);
+}
+.s15 .sec1-img{
+    background-image: url(https://wallpapercave.com/wp/wp8346969.jpg);
+}
+.s16 .sec1-img{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Posts_Brook_from_Norvin_Green_State_Forest_Lower_Trail.jpg/1200px-Posts_Brook_from_Norvin_Green_State_Forest_Lower_Trail.jpg);
+}
+
+.sec1-img{
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+}
+
+.num{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: #fa3030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sec1-wrap::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #222222;
+}
+
+/* Section 2 */
+.sec2-wrap{
+    padding-top: 10vh;
+}
+
+.sec2-cont{
+    padding: 50px;
+}
+
+.sec2-cont ul{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec2-cont li{
+    flex: 0 0 30%;
+    padding: 3vw;
+    text-align: center;
+}
+
+.sec2-img{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #fa3030;
+}
+
+.material-icons{
+    color: white;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.sec2-data{
+    margin-block: 30px;
+}
+
+.sec2-data p{
+    width: 80%;
+    margin: auto;
+}
+
+.sec2-head{
+    text-align: center;
+}
+
+/*circular economy part*/
+/* Basic styling for the section wrapper */
+.sec3-wrap {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color:#222222;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.8)), url(think.jpg);
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    color: #333;
+
+}
+
+/* Styling for headings */
+.sec3-wrap h2 {
+    color: #01b383;
+}
+
+.sec3-wrap h3 {
+    color:#3FFF00;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraphs */
+.sec3-wrap p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* Styling for lists */
+.sec3-wrap ul {
+    margin-bottom: 15px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.sec3-wrap ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Styling for strong elements */
+.sec3-wrap strong {
+    font-weight: bold;
+}
+
+/* Styling for the conclusion paragraph */
+.sec3-wrap h3:last-of-type + p {
+    font-style: italic;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+/* Styling for links if any */
+.sec3-wrap a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sec3-wrap a:hover {
+    text-decoration: underline;
+}
+
+
+/* About */
+.about-wrap{
+    padding: 20vh;
+    padding-top: 15vh;
+    padding-bottom: 0vh;
+    height: 90vh;
+}
+
+.about-cont ul{
+    padding: 30px;
+    list-style: none;
+    font-size: 1.6vw;
+    display: flex;
+    gap: 3vw;
+    height: 55vh;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.about-cont .photo{
+    border-radius: 50%;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fa3030;
+}
+
+.member1{
+    background-image: url(https://devitt-forand.com/wp-content/uploads/2018/05/person-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.member2{
+    background-image: url(https://devitt-forand.com/wp-content/uploads/2018/05/person-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.member3{
+    background-image: url(https://devitt-forand.com/wp-content/uploads/2018/05/person-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+/*footer{
+    color: white;
+    background-color: #fa3030;
+}
+
+.footer-cont{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-cont span{
+    font-size: 30px;
+}
+*/
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 50px 0; /* Padding around the content inside the footer */
+  }
+  
+  .content {
+    max-width: 1200px; /* Maximum width for the content inside the footer */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add some padding to the sides of the content */
+  }
+  
+  .top {
+    display: flex; /* Use flexbox layout for the top section */
+    justify-content: space-between; /* Space items evenly across the container */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .logo-details {
+    display: flex; /* Use flexbox layout for the logo details */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .logo-details i {
+    font-size: 24px; /* Set the font size for the logo icon */
+    margin-right: 10px; /* Add some space between the icon and text */
+  }
+  
+  .link-boxes {
+    display: flex; /* Use flexbox layout for the link boxes */
+    justify-content: space-between; /* Space items evenly across the container */
+    margin-top: 30px; /* Add some space above the link boxes */
+  }
+  
+  .box {
+    flex: 1; /* Each link box takes equal space */
+    list-style: none; /* Remove bullet points from the list */
+  }
+  
+  .link_name {
+    font-weight: bold; /* Make the link names bold */
+    margin-bottom: 10px; /* Add some space below the link names */
+  }
+  
+  .link_name a {
+    color: #fff; /* Set the text color for the links */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+  .link_name a:hover {
+    text-decoration: underline; /* Add underline to the links on hover */
+  }
+  
+  .bottom-details {
+    text-align: center; /* Center align the text in the bottom details */
+    margin-top: 30px; /* Add some space above the bottom details */
+  }
+  
+  .bottom_text {
+    font-size: 14px; /* Set the font size for the bottom text */
+  }
+  
+  .bottom_text a {
+    color: #fff; /* Set the text color for the bottom links */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+  .bottom_text a:hover {
+    text-decoration: underline; /* Add underline to the links on hover */
+  }
+
+  /* Additional footer styles from style.css */
+
+/* Styling for the social media icons */
+.media-icons a {
+    color: #fff; /* Set the color for the social media icons */
+    text-decoration: none; /* Remove underline from the icons */
+    margin-right: 10px; /* Add some space between the icons */
+  }
+  
+  .media-icons a:hover {
+    color: #ffd700; /* Change the color of the icons on hover */
+  }
+  
+  /* Styling for the company and account links */
+  .box a {
+    color: #fff; /* Set the color for the links in the link boxes */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+  .box a:hover {
+    text-decoration: underline; /* Add underline to the links on hover */
+  }
+  
+  /* Styling for the copyright text */
+  .copyright_text {
+    font-size: 12px; /* Set the font size for the copyright text */
+    display: block; /* Display the copyright text as a block element */
+    margin-top: 20px; /* Add some space above the copyright text */
+  }
+  
+  
